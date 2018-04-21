@@ -1,0 +1,11 @@
+	// Assign STATIC_AREA_ADDRESS to register "r0"
+ 	 loadI 1024 	=> r0 
+ 	 loadI 4 	=> r1 
+	// Compute address of array variable "a" with base address 0
+ 	 loadI 4 	=> r3 
+ 	 mult r1, r3 	=> r4 
+ 	 loadI 0 	=> r5 
+ 	 add r5, r4 	=> r6 
+ 	 add r0, r6 	=> r2 
+ 	 loadI 1 	=> r7 
+ 	 store r7 	=> r2 

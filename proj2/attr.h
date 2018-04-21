@@ -15,6 +15,34 @@ typedef struct {
         Type_Expression type;
         int targetRegister;
         } regInfo;
+        
+typedef struct {
+      Type_Expression type; 
+      int size; 
+} Stype_struct; 
+        
+        
+typedef struct regNode {
+ 
+    char * tok; 
+    struct regNode * next;
+    
+}tokNode;
+
+typedef struct label {
+  
+   int label_1; 
+   int label_2; 
+   int label_3; 
+} label_list; 
+
+/*typedef struct TokList{
+
+    regNode * head; 
+    regNode * tail;
+
+}TokenList;*/
+
 
 #endif
 

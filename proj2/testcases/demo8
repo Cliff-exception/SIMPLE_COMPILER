@@ -1,0 +1,12 @@
+program main; 
+
+var 
+  a: array[5] of integer; 
+  
+begin 
+
+  a[4] := 1
+    
+  end. 
+
+
